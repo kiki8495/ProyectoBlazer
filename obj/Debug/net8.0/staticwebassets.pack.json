@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Cristhian\\source\\repos\\Equipo1\\MiApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MiApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MiApp.gamnqyat6u.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Cristhian\\source\\repos\\Equipo1\\MiApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Cristhian\\source\\repos\\Equipo1\\MiApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Cristhian\\source\\repos\\Equipo1\\MiApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Cristhian\\source\\repos\\Equipo1\\MiApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MiApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MiApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MiApp.props",
+      "PackagePath": "build\\MiApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MiApp.props",
+      "PackagePath": "buildMultiTargeting\\MiApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MiApp.props",
+      "PackagePath": "buildTransitive\\MiApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,45 @@
+﻿@page "/veterinaria"
+@rendermode InteractiveServer
+
+@using MiApp.Patrones.Creacionales.AbstractFactory
+<PageTitle>Veterinaria</PageTitle>
+<h3>Veterinaria - Cuidado de Animales</h3>
+
+<select @onchange="SeleccionarFabrica">
+    <option value="" selected disabled>Selecciona...</option>
+    <option value="Gato">Cuidar a un Gato</option>
+    <option value="Perro">Cuidar a un Perro</option>
+</select>
+
+<button @onclick="CuidarAnimal">Cuidar Animal</button>
+
+@if (!string.IsNullOrEmpty(mensaje))
+{
+    <div class="alert alert-info">@mensaje</div>
+}
+
+@code {
+    private AnimalFactory fabricaSeleccionada;
+    private Animal animal;
+    private string mensaje;
+
+    private void SeleccionarFabrica(ChangeEventArgs e)
+    {
+        var seleccion = e.Value.ToString();
+        fabricaSeleccionada = seleccion switch
+        {
+            "Gato" => new GatoFactory(),
+            "Perro" => new PerroFactory(),
+            _ => throw new NotImplementedException()
+        };
+    }
+
+    private void CuidarAnimal()
+    {
+        if (fabricaSeleccionada != null)
+        {
+            animal = fabricaSeleccionada.CrearAnimal();
+            mensaje = animal.Cuidar();
+        }
+    }
+}
